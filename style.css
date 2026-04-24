@@ -1,0 +1,413 @@
+/**
+Theme Name: astra-child
+Author: Brainstorm Force
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra-child
+Template: astra
+*/
+
+
+.hero-can {
+  z-index: 3;
+}
+
+.hero-glow {
+  z-index: 1;
+}
+
+.sec1{
+    position: sticky;
+}
+
+.can-stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.can-1 {
+  opacity: 1;
+}
+
+.mouse-glow {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255,255,255,0.25), transparent 60%);
+  pointer-events: none;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+
+.can-float {
+  will-change: transform;
+}
+
+
+/* MAIN WRAPPER */
+#main-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  background: #000;
+}
+
+/* MOUSE GLOW */
+.mouse-glow {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255,255,255,0.25), transparent 60%);
+  pointer-events: none;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+
+.can {
+  position: relative;
+  z-index: 5;
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+
+.monster-can {
+  position: relative;
+  z-index: 5;
+}
+
+.monster-can img {
+  display: block;
+  will-change: transform;
+}
+
+video {
+  width: 100%;
+  will-change: transform;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.dragon-scroll-section {
+  position: relative;
+  height: 300vh; /* more scroll space */
+  width: 100%;
+}
+
+.dragon-sticky-wrap {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.dragon-circle-gallery {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  perspective: 2000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.dragon-circle-gallery .dragon-item {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 280px;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  will-change: transform, opacity;
+}
+
+.dragon-circle-gallery .dragon-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 25px 45px rgba(0,0,0,0.18);
+}
+
+.dragon-circle-gallery::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 80px;
+  left: 50%;
+  bottom: 120px;
+  transform: translateX(-50%);
+  background: radial-gradient(circle, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0.03) 45%, rgba(0,0,0,0) 75%);
+  filter: blur(18px);
+  z-index: 0;
+}
+
+@media (max-width: 1024px) {
+  .dragon-circle-gallery .dragon-item {
+    width: 140px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 767px) {
+  .dragon-scroll-section {
+    height: 220vh;
+  }
+
+  .dragon-circle-gallery .dragon-item {
+    width: 95px;
+    height: 150px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.dragon-scroll-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.dragon-circle-gallery {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  perspective: 2000px;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.dragon-circle-gallery .dragon-item {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 260px;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  will-change: transform, opacity;
+}
+
+.dragon-circle-gallery .dragon-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.22);
+}
+
+@media (max-width: 1024px) {
+  .dragon-circle-gallery .dragon-item {
+    width: 140px;
+    height: 210px;
+  }
+}
+
+@media (max-width: 767px) {
+  .dragon-circle-gallery .dragon-item {
+    width: 90px;
+    height: 135px;
+  }
+}
+
+
+
+
+
+/* ----------------------------------- */
+
+
+.unhung-hero{
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+
+.unhung-hero .elementor-widget-image{
+  position: absolute;
+}
+
+.unhung-hero .bottle{
+  will-change: transform;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.unhung-hero .hero-content{
+  position: relative;
+  z-index: 5;
+  text-align: center;
+}
+
+/* Bottle positions */
+.bottle-1{
+  top: -40px;
+  left: -60px;
+  transform: rotate(-22deg);
+}
+
+.bottle-2{
+  top: 180px;
+  left: 40px;
+  transform: rotate(-18deg);
+}
+
+.bottle-3{
+  bottom: -70px;
+  left: -30px;
+  transform: rotate(-55deg);
+}
+
+.bottle-4{
+  top: 20px;
+  right: -70px;
+  transform: rotate(22deg);
+}
+
+.bottle-5{
+  top: 250px;
+  right: 70px;
+  transform: rotate(12deg);
+}
+
+.bottle-6{
+  bottom: 40px;
+  right: -20px;
+  transform: rotate(8deg);
+}
+
+/* optional image sizing */
+.bottle-1 img{ width: 220px !important; }
+.bottle-2 img{ width: 250px !important; }
+.bottle-3 img{ width: 240px !important; }
+.bottle-4 img{ width: 220px !important; }
+.bottle-5 img{ width: 320px !important; }
+.bottle-6 img{ width: 120px !important; }
+
+@media (max-width: 767px){
+  .bottle-1 img{ width:140px !important; }
+  .bottle-2 img{ width:160px !important; }
+  .bottle-3 img{ width:150px !important; }
+  .bottle-4 img{ width:140px !important; }
+  .bottle-5 img{ width:190px !important; }
+  .bottle-6 img{ width:80px !important; }
+
+  .bottle-1{ left:-40px; top:0; }
+  .bottle-2{ left:0; top:220px; }
+  .bottle-3{ left:-20px; bottom:-30px; }
+  .bottle-4{ right:-40px; top:30px; }
+  .bottle-5{ right:0; top:330px; }
+  .bottle-6{ right:10px; bottom:20px; }
+}
+
+
+.unhung-hero{
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+
+.unhung-hero .bottle{
+  position: absolute;
+  will-change: transform;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.unhung-hero .hero-content{
+  position: relative;
+  z-index: 5;
+}
+
+.hero-content{
+  position: relative;
+  z-index: 20;
+}
+
+
+.unhung-hero{
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+
+.unhung-hero .bottle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  will-change: transform;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.unhung-hero .hero-content{
+  position: relative;
+  z-index: 5;
+}
+
+/* optional bottle sizes */
+.bottle-1 img{ width: 220px !important; }
+.bottle-2 img{ width: 250px !important; }
+.bottle-3 img{ width: 230px !important; }
+.bottle-4 img{ width: 120px !important; }
+.bottle-5 img{ width: 320px !important; }
+.bottle-6 img{ width: 180px !important; }
+
+@media (max-width: 767px){
+  .bottle-1 img{ width:130px !important; }
+  .bottle-2 img{ width:150px !important; }
+  .bottle-3 img{ width:140px !important; }
+  .bottle-4 img{ width:80px !important; }
+  .bottle-5 img{ width:180px !important; }
+  .bottle-6 img{ width:110px !important; }
+}
+
+.unhung-hero{
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+
+.unhung-hero .bottle{
+  position: absolute;
+  will-change: transform;
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
